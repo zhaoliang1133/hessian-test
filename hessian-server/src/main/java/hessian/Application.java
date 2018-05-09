@@ -23,6 +23,7 @@ public class Application {
     public static void main(String[] args){
         SpringApplication.run(Application.class, args);
     }
+
     //发布服务
     @Bean(name = "/HelloWorldService")
     public HessianServiceExporter accountService() {
@@ -31,4 +32,5 @@ public class Application {
         exporter.setServiceInterface(HelloWorldService.class);
         return exporter;
     }
+
 }

@@ -20,4 +20,13 @@ public class HelloWorldServiceImpl implements HelloWorldService {
     public Integer sayValue(Integer a) {
         return 8888 + a;
     }
+
+    @Override
+    public String[] sayArray(String[] x) {
+
+        for (int i = 0; i < x.length; i++) {
+            System.out.print(x[i]);
+        }
+        return new String[0];
+    }
 }

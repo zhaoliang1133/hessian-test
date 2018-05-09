@@ -21,9 +21,11 @@ public class TestController {
 
     @RequestMapping("/test")
     public TestVo test() {
+        String[] strings = {"a", "b", "c", "d", "e", "f"};
         TestVo testVo = new TestVo();
-        String one =  helloWorldService.sayHello("Spring boot with Hessian.");
+        String one = helloWorldService.sayHello("Spring boot with Hessian.");
         int a = helloWorldService.sayValue(100);
+        helloWorldService.sayArray(strings);
         testVo.setA(one);
         testVo.setB(a);
         return testVo;

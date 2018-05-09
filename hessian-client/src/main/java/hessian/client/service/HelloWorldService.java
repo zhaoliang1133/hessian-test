@@ -7,6 +7,11 @@ package hessian.client.service;
  * @author:zhaoliang
  */
 public interface HelloWorldService {
+
     String sayHello(String name);
+
     int sayValue(int a);
+
+    String[] sayArray(String[] x);
+
 }

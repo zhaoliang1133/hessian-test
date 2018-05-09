@@ -9,4 +9,5 @@ package hessian.server.service;
 public interface HelloWorldService {
     String sayHello(String name);
     Integer sayValue(Integer a);
+    String[] sayArray(String[] x);
 }
